@@ -8,9 +8,9 @@
     left: 0px;
     padding-top: 2em;
     text-align: center;
-    background: rgb(237,251,235);
+    background: rgb(168,218,220);
     height: 100%;
-    width: 244px;
+    width: 275px;
 }
 
 .site-header__profile-img {
@@ -23,6 +23,7 @@
     font-size: 26px;
     line-height: 56px;
     letter-spacing: -1px;
+    margin-top: .6em;
     margin-bottom: 0;
 
     &,
@@ -99,13 +100,15 @@
     }
 }
 
+.rss-subscribe a {
+    font-weight: bold;
+}
 
 
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -117,6 +120,7 @@
 .contact-list,
 .social-media-list {
     list-style: none;
+    margin-top: .3em;
     margin-left: 0;
 }
 
@@ -193,12 +197,13 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    color: #DB7F8E;
 }
 
-.post-link {
+a.post-link {
     display: block;
     font-size: 24px;
+    color: #424242;
 }
 
 
@@ -245,5 +250,9 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+
+    p {
+        font-size: 1.25em;
     }
 }

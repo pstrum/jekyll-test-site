@@ -2,12 +2,21 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 2em;
+    text-align: center;
+    background: rgb(237,251,235);
+    height: 100%;
+    width: 244px;
+}
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+.site-header__profile-img {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
 }
 
 .site-title {
@@ -15,7 +24,6 @@
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
 
     &,
     &:visited {
@@ -23,8 +31,12 @@
     }
 }
 
+.site-description {
+    font-size: 1em;
+    line-height: 1;
+}
+
 .site-nav {
-    float: right;
     line-height: 56px;
 
     .menu-icon {
@@ -32,6 +44,7 @@
     }
 
     .page-link {
+        font-weight: 400;
         color: $text-color;
         line-height: $base-line-height;
 
